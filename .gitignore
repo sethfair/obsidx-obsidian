@@ -1,0 +1,15 @@
+# intellij
+.idea
+
+# npm
+node_modules
+
+# build
+main.js
+*.js.map
+
+# obsidian plugin data when symlinked into a test vault
+data.json
+
+# os
+.DS_Store

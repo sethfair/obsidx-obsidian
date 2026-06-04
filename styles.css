@@ -1,0 +1,109 @@
+/*
+ * Obsidx search modal — adapted from Omnisearch's result styling.
+ * Most of the chrome (modal frame, .suggestion-item, .is-selected accent,
+ * .prompt-instructions footer) is inherited from Obsidian's theme; we only
+ * style the obsidx-specific result internals.
+ */
+
+.obsidx-modal .prompt-input-container {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.obsidx-create-note {
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+
+.obsidx-result {
+	white-space: normal;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.obsidx-result__title-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 5px;
+	flex-wrap: wrap;
+}
+
+.obsidx-result__title {
+	white-space: pre-wrap;
+	align-items: center;
+	display: flex;
+	gap: 5px;
+	font-weight: var(--font-bold);
+}
+
+.obsidx-result__extension {
+	font-size: 0.7rem;
+	color: var(--text-muted);
+}
+
+.obsidx-result__counter {
+	font-size: 0.7rem;
+	color: var(--text-muted);
+	flex-shrink: 0;
+}
+
+.obsidx-result__folder-path {
+	font-size: 0.75rem;
+	align-items: center;
+	display: flex;
+	gap: 5px;
+	color: var(--text-muted);
+}
+
+.obsidx-result__meta {
+	font-size: 0.72rem;
+	color: var(--text-muted);
+	margin-inline-start: 0.2em;
+}
+
+.obsidx-result__body {
+	white-space: normal;
+	font-size: small;
+	word-wrap: normal;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	color: var(--text-muted);
+	margin-inline-start: 0.5em;
+}
+
+.obsidx-result__icon {
+	display: inline-flex;
+	align-items: center;
+	width: 16px;
+	height: 16px;
+}
+
+.obsidx-result__icon svg {
+	width: 16px;
+	height: 16px;
+}
+
+/* Underline matched query terms, matching Omnisearch's default highlight. */
+.obsidx-default-highlight {
+	text-decoration: underline;
+	text-decoration-color: var(--text-highlight-bg);
+	text-decoration-thickness: 3px;
+	text-underline-offset: -1px;
+	text-decoration-skip-ink: none;
+}
+
+.obsidx-empty,
+.obsidx-error {
+	padding: 12px;
+	color: var(--text-muted);
+	text-align: center;
+}
+
+.obsidx-error {
+	color: var(--text-error);
+}

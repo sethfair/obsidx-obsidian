@@ -1,0 +1,10 @@
+{
+	"id": "obsidx",
+	"name": "Obsidx Semantic Search",
+	"version": "0.1.0",
+	"minAppVersion": "1.5.0",
+	"description": "Omnisearch-style semantic search for your vault, powered by a local obsidx recall server (embeddings + HNSW).",
+	"author": "Seth Fair",
+	"authorUrl": "https://github.com/sethfair",
+	"isDesktopOnly": true
+}
