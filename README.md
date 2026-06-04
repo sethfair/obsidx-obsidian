@@ -4,7 +4,8 @@ An [Obsidian](https://obsidian.md) plugin that brings an **Omnisearch-style sear
 
 Type a natural-language query, get back the most *semantically relevant* notes — ranked, with heading paths, frontmatter, and excerpts.
 
-![screenshot placeholder](docs/screenshot.png)
+<!-- Add docs/screenshot.png to render here — see docs/SCREENSHOT.md for how to capture it. -->
+![Obsidx semantic search modal](docs/screenshot.png)
 
 ## How it works
 
