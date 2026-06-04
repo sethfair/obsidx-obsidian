@@ -7,13 +7,26 @@
 
 .obsidx-modal .prompt-input-container {
 	display: flex;
-	gap: 8px;
+	gap: var(--size-4-2, 8px);
 	align-items: center;
+	/* Inset the button from the modal's rounded right edge. */
+	padding-inline-end: var(--size-4-3, 12px);
+}
+
+/*
+ * The native .prompt-input is width:100%, which forces a full-width flex basis
+ * and refuses to shrink — pushing the button past the modal edge. Let it flex
+ * and allow it to shrink below its intrinsic width.
+ */
+.obsidx-modal .prompt-input {
+	flex: 1 1 auto;
+	width: auto;
+	min-width: 0;
 }
 
 .obsidx-create-note {
 	white-space: nowrap;
-	flex-shrink: 0;
+	flex: 0 0 auto;
 }
 
 .obsidx-result {
