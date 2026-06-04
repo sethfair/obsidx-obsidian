@@ -1,6 +1,6 @@
 {
 	"name": "obsidx-obsidian",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Omnisearch-style semantic search for Obsidian, powered by a local obsidx recall server.",
 	"main": "main.js",
 	"scripts": {
